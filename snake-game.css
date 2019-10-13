@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: none;
+    margin: none;
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: 'Mansalva', cursive;
+    text-align: center;
+    position: relative;
+    padding: none;
+    margin: none;
+    height: 100%;
+    width: 100%;
+    background: #C4F99A;
+}
+
+#context {
+    border:3px solid #295e5e;
+    border-radius: 5%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 600px;
+    background:#80D39E;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 2px 6px 5px 0px rgba(137,163,54,1);
+    -moz-box-shadow: 2px 6px 5px 0px rgba(137,163,54,1);
+    box-shadow: 2px 6px 5px 0px rgba(137,163,54,1);
+}
+
+.control-panel {
+    width:350px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.scoreboard {
+    width: 300px;
+    align-self: flex-start;
+    background: rgb(225, 238, 177);
+    border-radius: 5px;
+    border:5px solid rgb(94, 169, 204);
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+#score-display {
+    display: inline-block;
+    transition: .5s;
+}
+
+.level-selector {
+    width: 100%;
+    height:400px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level {
+    transition: .3s;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    background: rgb(202, 241, 175);
+}
+
+.selected {
+    transition: .3s;
+    top: 5px;
+}
+
+.selected .shadow{
+    transition: .3s;
+    top: 3px;
+}
+
+.shadow {
+    transition: .3s;
+    position: absolute;
+    top: 8px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgb(128, 189, 138);
+    z-index: -1;
+}
+.level span {
+    margin: auto;
+    text-align: center;
+    vertical-align: center;
+}
+
+h3{
+    font-size: 25px;;
+}
